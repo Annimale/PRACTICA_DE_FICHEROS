@@ -12,27 +12,26 @@ import java.util.Scanner;
  */
 public class listaAlumno {
 
-    Scanner tcl = new Scanner(System.in);
-ArrayList<alumno> listaAlumnito = new ArrayList();
-    public void ponerDatos() {
-        
-        
+    ArrayList<alumno> listaAlumnito = new ArrayList();
+
+    public static void ponerDatos() {
+        Scanner tcl = new Scanner(System.in);
+
         System.out.println("Introduzca el carnet");
-        String carnet =tcl.nextLine();
+        String carnet = tcl.nextLine();
         System.out.println("Introduzca su nombre");
         String nombre = tcl.nextLine();
         System.out.println("Introduzca su apellido");
-        String apellidos=tcl.nextLine();
+        String apellidos = tcl.nextLine();
         System.out.println("Introduzca su primera nota");
-        double nota1=tcl.nextInt();
+        double nota1 = tcl.nextInt();
         System.out.println("Introduzca su segunda nota");
-        double nota2=tcl.nextInt();
+        double nota2 = tcl.nextInt();
         System.out.println("Introduzca su tercera nota");
-        double nota3=tcl.nextInt();
-        
-        alumno alu=new alumno(carnet,nombre,apellidos,nota1,nota2,nota3);
-        
-        
+        double nota3 = tcl.nextInt();
+
+        alumno alu = new alumno(carnet, nombre, apellidos, nota1, nota2, nota3);
+
     }
 
 }
