@@ -8,12 +8,17 @@
  * @author ivamar
  */
 public class alumno {
+
+    static double calcularMedia(double parseDouble, double parseDouble0, double parseDouble1) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     private String carnet;
     private String nombre;
     private String apellidos;
     private double nota1;
     private double nota2;
     private double nota3;
+    
 
     public alumno(String carnet, String nombre, String apellidos, double nota1, double nota2, double nota3) {
         this.carnet = carnet;
@@ -23,7 +28,9 @@ public class alumno {
         this.nota2 = nota2;
         this.nota3 = nota3;
     }
-
+public double calcularMedia() {
+        return (nota1 + nota2 + nota3) / 3;
+    }
     public String getCarnet() {
         return carnet;
     }
@@ -74,7 +81,7 @@ public class alumno {
 
     @Override
     public String toString() {
-        return "alumno{" + "carnet=" + carnet + ", nombre=" + nombre + ", apellidos=" + apellidos + ", nota1=" + nota1 + ", nota2=" + nota2 + ", nota3=" + nota3 + '}';
+        return "Alumno|| " + " carnet: " + carnet + "  nombre: " + nombre + "     apellidos: " + apellidos + "    nota1: " + nota1 + "    nota2: " + nota2 + "    nota3: " + nota3 +"\n";
     }
     
     
