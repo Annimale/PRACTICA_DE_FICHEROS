@@ -17,7 +17,7 @@ public class MAIN {
         Scanner tcl = new Scanner(System.in);
         boolean repetir = true;
         do {
-            System.out.print("------ PRACTICA FICHEROS -------\n\n1. Introducir datos\n2. Buscar por nombre\n3. Modificar \n4. Borrar por carnet\n5. Guardar Aprobados \n6. Visualizar aprobados \n7 Guardar en alumnos.dat \n0. Salir\n\nSeleccione una opcion: ");
+            System.out.print("------ PRACTICA FICHEROS -------\n\n1. Introducir datos\n2. Buscar por nombre\n3. Modificar \n4. Borrar por carnet\n5. Guardar Aprobados \n6. Visualizar aprobados \n7. Guardar en alumnos.dat \n0. Salir\n\nSeleccione una opcion: ");
             byte eleccion = tcl.nextByte();
             repetir = true;
             switch (eleccion) {
@@ -35,16 +35,16 @@ public class MAIN {
                     listaAlumno.modificarAlumnoPorCarnet(lista);
                     break;
                 case 4:
-
+                    listaAlumno.visualizarAprobados();
                     break;
                 case 5:
-
+                listaAlumno.pasarFichero5(lista);
                     break;
                 case 6:
-
+                    listaAlumno.visualizarFichero5();
                     break;
                 case 7:
-
+                    listaAlumno.guardarTodosAlumnos(lista);
                     break;
                 default:
                     System.out.println("No has introducido ninguna de las opciones dadas");
