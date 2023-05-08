@@ -5,7 +5,7 @@
 
 /**
  *
- * @author ivamar
+ * @author ivamarrrr
  */
 public class alumno {
 
